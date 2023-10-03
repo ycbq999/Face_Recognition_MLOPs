@@ -1,0 +1,4 @@
+{
+    "python.terminal.activateEnvInCurrentTerminal": true, 
+    "python.defaultInterpreterPath": "/home/ycbq999/face_recognition_venv/bin/python" 
+}
