@@ -1,5 +1,5 @@
 from flask import Flask
-from app import views
+from myapp import views
 
 app = Flask(__name__) # webserver gateway interface (WSGI)
 
@@ -9,12 +9,13 @@ app = Flask(__name__) # webserver gateway interface (WSGI)
 #     return "<h1>Welcome to Face Recognition web App</h1>"
 
 
+
 app.add_url_rule(rule = '/', endpoint = 'home', view_func = views.index)
-app.add_url_rule(rule = '/app/', endpoint = 'app', view_func = views.app)
-app.add_url_rule(rule = '/app/gender/', 
-                 endpoint = 'gender', 
-                 view_func = views.genderapp,
-                 methods=['GET','POST'])
+app.add_url_rule(rule = '/application', endpoint = 'web_app', view_func = views.web_app)
+# app.add_url_rule(rule = '/app/gender/', 
+#                  endpoint = 'gender', 
+#                  view_func = views.genderapp,
+#                  methods=['GET','POST'])
 
 
 if __name__ == '__main__':
