@@ -8,7 +8,7 @@ the model itself is not full accurate. but the purpose of this application is ma
 
 ### Step2. Deploy in Azure. 
 
-
+build a docker file. try to make it work now 
 
 
 
