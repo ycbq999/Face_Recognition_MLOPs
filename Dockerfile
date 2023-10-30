@@ -11,9 +11,10 @@ RUN apt-get update && apt-get install -y \
 
 COPY . /app
 
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
 
-EXPOSE 80
+EXPOSE 5000
 
 # Run app.py when the container launches
-ENTRYPOINT ["python", "main.py"]
+CMD  ["python", "main.py"]
