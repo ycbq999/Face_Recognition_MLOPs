@@ -19,4 +19,4 @@ app.add_url_rule(rule = '/application/gender/',
 
 
 if __name__ == '__main__':
-    app.run(port = int("5000"), debug=True) # run the server
+    app.run(host='0.0.0.0', port=5000,debug=True)
