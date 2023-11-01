@@ -8,7 +8,12 @@ the model itself is not full accurate. but the purpose of this application is ma
 
 ### Step2. Deploy in Azure. 
 
-build a docker file. try to make it work now 
+#### Build docker file
+Carefully read rundocker.sh and clear_container.sh file. select the command you need or run the bash file as a whole
+
+#### Deploy to Azure app service
+
+Build yaml file
 
 
 
